@@ -28,64 +28,110 @@
             </form>
         </div>
     </header>
-    <main>
-        <!-- <div class="form"> requisito 6 -->
-        <form id="evaluation-form">
-            <!-- <img src="" alt=""> requisito 7-->
-            <!-- <label for=""> requisito 8
-                <input type="text">
+    <main id="evaluation-form">
+        <!-- <form id="evaluation-form"> -->
+            
+            <img id="trybewarts-forms-logo" src="./images/trybewarts-colored.svg" alt="Trybewarts Image">
+
+            <!-- REQUISITO 10 NOME E SOBRENOME LADO A LADO -->
+            <label for="firstName"> 
+              <input type="text" id="input-name" placeholder="Nome">
+            </label>
+            <label for="lastName">
+              <input type="text"id="input-lastname" placeholder="Sobrenome">
+            </label>
+            
+            <label for="email">
+                <input type="email" id="input-email" placeholder="Email">
+            </label>
+            <!-- CASAS E EMAIL FICAR LADO A LADO REQUISITO 11 -->
+            <label for="houses"> 
+                <select name="Houses" id="house">
+                    <option value="Gitnoria" id="gitnoria-house">Gitnoria</option>
+                    <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
+                    <option value="Corvinode" id="corvinode-house">Corvinode</option>
+                    <option value="Pytherina" id="pytherina-house">Pytherina</option>
+                </select> 
+            </label>
+            <!-- POSICIONAR OS RADIOS PRA FICAR UM ABAIXO DO OUTRO -->
+            <label for="Radiobox" id="label-family"> Qual sua família? 
+                <label for="Frontend">Frontend
+                    <input type="radio" name="family" value="Frontend">
+                </label>
+                <label for="Backend">Backend
+                  <input type="radio" name="family" value="Backend">
+                </label>
+
+                <label for="FullStack">Fullstack
+                    <input type="radio" name="family" value="FullStack">
+                </label>
             </label>
             <label for="">
-                <input type="text">
+                <label for="HoFs"> HoFs
+                    <input type="checkbox" value="HoFs" class="subject">
+                </label>
+                <label for="Jest"> Jest
+                    <input type="checkbox" value="Jest" class="subject">
+                </label>
+                <label for="Promises"> Promises
+                    <input type="checkbox" value="Promises" class="subject">
+                </label>
+                <label for="React"> React
+                    <input type="checkbox" value="React" class="subject">
+                </label>
+                <label for="SQL"> SQL
+                    <input type="checkbox" value="SQL" class="subject">
+                </label>
+                <label for="Python"> Python
+                    <input type="checkbox" value="Python" class="subject">
+                </label>
             </label>
-            <label for="">
-                <input type="text">
-            </label> -->
-            <!-- <label for=""> requisito 9
-                <select name="" id=""></select>
-            </label> -->
-            <!-- <label for=""> requisito 10
-                <input type="text">
-                <input type="text">
-            </label> -->
-            <!-- <label for=""> requisito 11
-                <input type="text">
-                <input type="text">   
-            </label> -->
-            <!-- <label for=""> requisito 12
-                <input type="radio" name="" id="">
-                <input type="radio" name="" id="">
-                <input type="radio" name="" id="">
-            </label> -->
-            <!-- <label for=""> requisito 13
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-            </label> -->
-            <!-- <label for=""> requisito 14
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-                <input type="checkbox" name="" id="">
-            </label> -->
-            <!-- <label for=""> requisito 15
-                <textarea name="" id="" cols="30" rows="10"></textarea>
-            </label> -->
-            <!-- <label for=""> requisito 16
-                <input type="checkbox" name="" id="">
-            </label> -->
+            <!-- OS 10 RADIOBUTTONS LADO A LADO -->
+            <label id="label-rate" for="Evaluation">
+                <label for="grade1">1 
+                  <input type="radio" value="1" name="rate">
+                </label>
+                <label for="grade2">2
+                  <input type="radio" value="2" name="rate">
+                </label>
+                <label for="grade3">3 
+                  <input type="radio" value="3" name="rate">
+                </label>
+                <label for="grade4">4 
+                  <input type="radio" value="4" name="rate">
+                </label>
+                <label for="grade5">5 
+                  <input type="radio" value="5" name="rate">
+                </label>
+                <label for="grade6">6 
+                  <input type="radio" value="6" name="rate">
+                </label>
+                <label for="grade7">7 
+                  <input type="radio" value="7" name="rate">
+                </label>
+                <label for="grade8">8 
+                  <input type="radio" value="8" name="rate">
+                </label>
+                <label for="grade9">9 
+                  <input type="radio" value="9" name="rate">
+                </label>
+                <label for="grade10">10 
+                  <input type="radio" value="10" name="rate">
+                </label>
+            </label>
+            <label for="Textarea" class="textarea">Deixe seu comentário:
+                <textarea maxlength="500" name="" id="" cols="30" rows="10"></textarea>
+            </label>
+            <label for="Agreement" id="label-infos">Você concorda com o uso das informações acima?
+                <label for="yes">Sim 
+                  <input type="checkbox" name="yes" id="agreement">
+                </label>
+                <label for="no">Não
+                  <input type="checkbox" name="no" id="agreement">
+                </label>
+            </label>
             <!-- <button type="submit"></button>  requisito 17 -->
-        <!-- </div> -->
-        </form>
+        <!-- </form> -->
     </main>
     <!-- <footer></footer> requisito 19 -->
     <footer>
