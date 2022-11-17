@@ -2,9 +2,10 @@ const loginEmail = document.getElementById('login-email');
 const loginPassword = document.getElementById('login-password');
 const loginButton = document.getElementById('login-button');
 
-function loginChecker() {
+function loginChecker(event) {
+  event.preventDefault();
   let message = '';
-  if (loginEmail.innerText === 'tryber@teste.com' && loginPassword.innerText === '123456') {
+  if (loginEmail.value === 'tryber@teste.com' && loginPassword.value === '123456') {
     message = 'Olá, Tryber!';
   } else {
     message = 'Email ou senha inválidos.';
@@ -12,4 +13,4 @@ function loginChecker() {
   return alert(message);
 }
 
-loginButton.addEventListener('submit', loginChecker);
+loginButton.addEventListener('click', loginChecker);
