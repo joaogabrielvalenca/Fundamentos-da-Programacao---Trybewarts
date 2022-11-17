@@ -4,7 +4,7 @@ const loginButton = document.getElementById('login-button');
 
 function loginChecker() {
   let message = '';
-  if (loginEmail.innerText === 'tryber@teste.com' && loginPassword.innerText === 123456) {
+  if (loginEmail.innerText === 'tryber@teste.com' && loginPassword.innerText === '123456') {
     message = 'Olá, Tryber!';
   } else {
     message = 'Email ou senha inválidos.';

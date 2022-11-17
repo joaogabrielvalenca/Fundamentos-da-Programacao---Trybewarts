@@ -42,3 +42,29 @@ main {
   width: 675px;
   flex-direction: column;
 }
+
+#login-email {
+  font-size: 20px;
+  margin: auto 5px auto 30px;
+}
+
+#login-password {
+  font-size: 20px;
+  margin: auto 5px;
+}
+
+#login-button {
+  font-size: 20px;
+  margin: auto 5px;
+  border: 1px solid white;
+  background-color: transparent;
+  color: white;
+  border-radius: 10px;
+}
+
+#login-button:hover {
+  border: 1px solid rgb(50, 167, 145);
+  background-color: white;
+  color: rgb(50, 167, 145);
+  cursor: pointer;
+}
