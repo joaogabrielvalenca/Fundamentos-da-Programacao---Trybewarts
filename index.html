@@ -28,23 +28,16 @@
             </form>
         </div>
     </header>
-    <main id="evaluation-form">
-        <!-- <form id="evaluation-form"> -->
-            <img id="trybewarts-forms-logo" src="./images/trybewarts-colored.svg" alt="Trybewarts Image">
-
-            <!-- REQUISITO 10 NOME E SOBRENOME LADO A LADO -->
-            <label for="firstName"> 
-              <input type="text" id="input-name" placeholder="Nome">
-            </label>
-            <label for="lastName">
-              <input type="text"id="input-lastname" placeholder="Sobrenome">
+    <main id="main-tag">
+        <form id="evaluation-form">
+     
+            <label for="Names"> 
+              <input type="text" class="names"id="input-name" placeholder="Nome">
+              <input type="text" class="names"id="input-lastname" placeholder="Sobrenome">
             </label>
             
-            <label for="email">
-                <input type="email" id="input-email" placeholder="Email">
-            </label>
-            <!-- CASAS E EMAIL FICAR LADO A LADO REQUISITO 11 -->
-            <label for="houses"> 
+            <label for="email-and-houses">
+                <input type="email" class="email-and-houses"id="input-email" placeholder="Email">
                 <select name="Houses" id="house">
                     <option value="Gitnoria" id="gitnoria-house">Gitnoria</option>
                     <option value="Reactpuff" id="reactpuff-house">Reactpuff</option>
@@ -52,20 +45,18 @@
                     <option value="Pytherina" id="pytherina-house">Pytherina</option>
                 </select> 
             </label>
-            <!-- POSICIONAR OS RADIOS PRA FICAR UM ABAIXO DO OUTRO -->
-            <label for="Radiobox" id="label-family"> Qual sua família? 
-                <label for="Frontend">Frontend
-                    <input type="radio" name="family" value="Frontend">
-                </label>
-                <label for="Backend">Backend
-                  <input type="radio" name="family" value="Backend">
-                </label>
 
-                <label for="FullStack">Fullstack
-                    <input type="radio" name="family" value="FullStack">
-                </label>
-            </label>
-            <label for="">
+            <label for="Radiobox" id="label-family"> Qual sua família? </label>
+                <label for="Frontend">Frontend</label>
+                    <input class="stack-family" type="radio" name="family" value="Frontend">
+                
+                <label for="Backend">Backend</label>
+                  <input class="stack-family" type="radio" name="family" value="Backend">
+                <label for="FullStack">Fullstack</label>
+                    <input class="stack-family" type="radio" name="family" value="FullStack">
+                
+            
+            <label for="stacks" id="label-content">Qual Conteúdo você está com mais vontade de aprender?</label>
                 <label for="HoFs"> HoFs
                     <input type="checkbox" value="HoFs" class="subject">
                 </label>
@@ -84,9 +75,10 @@
                 <label for="Python"> Python
                     <input type="checkbox" value="Python" class="subject">
                 </label>
-            </label>
+            
             <!-- OS 10 RADIOBUTTONS LADO A LADO -->
-            <label id="label-rate" for="Evaluation">
+            <label id="label-rate" for="Evaluation">Como você avalia a Trybewarts</label>
+              <div>
                 <label for="grade1">1 
                   <input type="radio" value="1" name="rate">
                 </label>
@@ -117,10 +109,10 @@
                 <label for="grade10">10 
                   <input type="radio" value="10" name="rate">
                 </label>
-            </label>
-            <label for="Textarea" class="textarea">Deixe seu comentário:
-                <textarea maxlength="500" name="" id="" cols="30" rows="10"></textarea>
-            </label>
+              </div>
+            <label for="Textarea" class="textarea">Deixe seu comentário:</label>
+                <textarea maxlength="500" name="" id="textarea" cols="60" rows="10"></textarea>
+            
             <label for="Agreement" id="label-infos">Você concorda com o uso das informações acima?
                 <label for="yes">Sim 
                   <input type="checkbox" name="yes" id="agreement">
@@ -130,7 +122,8 @@
                 </label>
             </label>
             <!-- <button type="submit"></button>  requisito 17 -->
-        <!-- </form> -->
+        </form>
+        <img id="trybewarts-forms-logo" src="./images/trybewarts-colored.svg" alt="Trybewarts Image">
     </main>
     <footer>
         <p>Direitos reservados à Trybewarts©</p>
