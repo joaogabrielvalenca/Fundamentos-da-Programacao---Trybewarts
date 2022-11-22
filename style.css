@@ -90,6 +90,7 @@ main {
 #main-tag {
   display: flex;
   margin-bottom: 800px;
+  width: 800px;
 }
 
 .stack-family {
