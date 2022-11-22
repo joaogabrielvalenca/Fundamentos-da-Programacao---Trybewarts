@@ -19,6 +19,12 @@ function loginChecker(event) {
 
 loginButton.addEventListener('click', loginChecker);
 
-if (formAgreement.value === checked) {
-  formButton.disabled = false;
-}
+const checkChecked = () => {
+  if (formAgreement.checked === true) {
+    formButton.disabled = false;
+  } else if (formAgreement.checked === false) {
+    formButton.disabled = true;
+  }
+};
+
+formAgreement.addEventListener('change', checkChecked);
